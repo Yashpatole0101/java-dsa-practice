@@ -1,0 +1,37 @@
+package Arrays;
+
+public class Array07_reverse {
+
+	public static void main(String[] args) {
+		int[] arr = {10, 20, 30, 40, 50};
+
+        System.out.print("Original array: ");
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+
+        // Reverse the array
+        int start = 0;
+        int end = arr.length - 1;
+
+      
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+
+            start++;
+            end--;
+        
+
+        System.out.println();
+
+        System.out.print("Reversed array: ");
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+
+	}
+
+}
